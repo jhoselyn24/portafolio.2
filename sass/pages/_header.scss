@@ -1,0 +1,90 @@
+header{
+	.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+	}
+	.navbar-shrink{
+		background-color: #2D9A8F;
+    	border-color: #2D9A8F;
+	}
+	.navbar-default .navbar-nav>li>a{
+		color:white;
+		&:hover{
+			color:black;
+		}
+	}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    	color: white;//#EC0031
+    	border-bottom: 1px solid white;
+    	background: none;
+    	padding: 2px;
+    	margin: 13px;
+    	&:hover{
+    		color:black;
+    	}
+	}
+}
+#hero{
+	background-image: url('../img/fondo-green.jpg');
+	background-size: cover;
+	height: 700px;
+	padding: 19% 0 0;
+	background-color: rgba(0,0,0,0.5);
+	background-blend-mode: color;
+	background-attachment:fixed;
+	.box-hero {
+		.img-hero{
+			width: 60%;
+		}
+		h2{
+			font-family: 'Montserrat';
+    		text-transform: uppercase;
+    		font-weight: 700;
+    		color:white;
+    		margin-top: -20px;
+		}
+		.fa-chevron-circle-down{
+			font-size:42px;
+			color:#32BAAB;
+		}
+	}
+}
+@media (max-width: 500px){
+	.navbar-toggle {
+	margin-top: 0px;
+   
+	}
+	.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	padding: 1% 0;
+	}
+	header .navbar-nav li{
+		text-align: center;
+	}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: white;
+	background: none;
+	border-bottom: none;
+	}
+	.navbar-shrink{
+	background-color: #2D9A8F;
+	border-color: #2D9A8F;
+	padding: 1% 0;
+	}
+	#hero{
+		padding: 60% 0 0;
+	}
+	#hero .box-hero h2 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    margin-top: 0px;
+    font-size: 2em;
+	}
+	#hero .box-hero .img-hero {
+    width: 85%;
+	}
+}

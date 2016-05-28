@@ -1,0 +1,149 @@
+@font-face {
+  font-family: LatoHeavy;
+  src: url(../fonts/LatoHeavy.ttf); }
+@font-face {
+  font-family: Latolight;
+  src: url(../fonts/Latolight.ttf); }
+@font-face {
+  font-family: DolceVita;
+  src: url(../fonts/DolceVita.ttf); }
+@font-face {
+  font-family: Neoteric-Bold;
+  src: url(../fonts/Neoteric-Bold.ttf); }
+body {
+  font-family: 'LatoHeavy'; }
+
+header .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  color: white; }
+header .navbar-shrink {
+  background-color: #2D9A8F;
+  border-color: #2D9A8F; }
+header .navbar-default .navbar-nav > li > a {
+  color: white; }
+  header .navbar-default .navbar-nav > li > a:hover {
+    color: black; }
+header .navbar-default .navbar-nav > .active > a, header .navbar-default .navbar-nav > .active > a:focus, header .navbar-default .navbar-nav > .active > a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  background: none;
+  padding: 2px;
+  margin: 13px; }
+  header .navbar-default .navbar-nav > .active > a:hover, header .navbar-default .navbar-nav > .active > a:focus:hover, header .navbar-default .navbar-nav > .active > a:hover:hover {
+    color: black; }
+
+#hero {
+  background-image: url("../img/fondo-green.jpg");
+  background-size: cover;
+  height: 700px;
+  padding: 19% 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  background-attachment: fixed; }
+  #hero .box-hero .img-hero {
+    width: 60%; }
+  #hero .box-hero h2 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    margin-top: -20px; }
+  #hero .box-hero .fa-chevron-circle-down {
+    font-size: 42px;
+    color: #32BAAB; }
+
+@media (max-width: 500px) {
+  .navbar-toggle {
+    margin-top: 0px; }
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 1% 0; }
+
+  header .navbar-nav li {
+    text-align: center; }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: white;
+    background: none;
+    border-bottom: none; }
+
+  .navbar-shrink {
+    background-color: #2D9A8F;
+    border-color: #2D9A8F;
+    padding: 1% 0; }
+
+  #hero {
+    padding: 60% 0 0; }
+
+  #hero .box-hero h2 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    margin-top: 0px;
+    font-size: 2em; }
+
+  #hero .box-hero .img-hero {
+    width: 85%; } }
+#aboutme {
+  padding: 100px 0; }
+  #aboutme .new-hr {
+    background: url("../img/resources/diagonal.png");
+    color: transparent;
+    border: 0px solid transparent;
+    clear: both; }
+  #aboutme .img-about {
+    margin-top: 15%; }
+  #aboutme .img-me {
+    border-radius: 100%;
+    width: 250px;
+    margin: 1% 0; }
+
+#skills {
+  height: 800px;
+  padding: 100px 0; }
+  #skills .fa-video-camera, #skills .fa-code {
+    font-size: 100px;
+    color: black; }
+
+#portafolio {
+  padding: 100px 0; }
+  #portafolio .love, #portafolio .kane, #portafolio .agency {
+    width: 100%;
+    margin-bottom: 10px; }
+  #portafolio .box-portfolio {
+    padding: 5px; }
+  #portafolio button {
+    display: inline-block;
+    padding: .3em .7em;
+    background: none;
+    border: 0;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    text-transform: uppercase; }
+  #portafolio button.active {
+    color: #2D9A8F; }
+  #portafolio button:focus {
+    outline: 0 none; }
+  #portafolio .container-portfolio {
+    padding: 2% 2% 0;
+    text-align: justify;
+    font-size: 0.1px;
+    background-image: url("../img/resources/diagonal.png"); }
+  #portafolio .container-portfolio:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  #portafolio .container-portfolio .mix {
+    text-align: left;
+    margin-bottom: 2%;
+    display: none; }
+  #portafolio .controls {
+    padding: 2%; }
+
+/*# sourceMappingURL=global.css.map */

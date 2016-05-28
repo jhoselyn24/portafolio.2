@@ -1,0 +1,47 @@
+#portafolio{
+	padding: 100px 0;
+	// background-color: pink;
+	.love,.kane,.agency{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.box-portfolio{
+		padding: 5px;
+	}
+	button{
+  		display: inline-block;
+  		padding: .3em .7em;
+  		background: none;
+  		border: 0;
+  		color: black;
+  		font-size: 16px;
+  		font-weight: 300;
+  		cursor: pointer;
+  		text-transform: uppercase;
+	}
+	button.active{
+  	color: #2D9A8F;
+	}
+	button:focus{
+  	outline: 0 none;
+	}
+	.container-portfolio{
+  		padding: 2% 2% 0;
+  		text-align: justify;
+  		font-size: 0.1px;
+  		background-image: url('../img/resources/diagonal.png');
+	}
+	.container-portfolio:after{
+  		content: '';
+  		display: inline-block;
+  		width: 100%;
+	}
+	.container-portfolio .mix{
+  		text-align: left;
+  		margin-bottom: 2%;
+  		display: none;
+	}
+	.controls{
+  		padding: 2%;
+	}
+}

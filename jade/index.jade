@@ -1,0 +1,107 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title Bio
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css")
+		link(href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css")
+		link(href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css")
+		link(href="font-awesome/css/font-awesome.css" rel="stylesheet")
+		link(href="css/global.css" rel="stylesheet")
+		link(href="css/animate.css" rel="stylesheet")
+		meta(name="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+	body
+		include base/_mixin.jade
+		header
+			nav.navbar.navbar-default.navbar-fixed-top
+				.container
+					.navbar-header.page-scroll.text-center.animated.swing
+						button(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1").navbar-toggle
+							span.sr-only Toogle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a(href="#hero").navbar-brand.page-scroll Jhoselyn
+					div(id="bs-example-navbar-collapse-1").collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li.hidden: a(href="#page-top")
+							li: a.page-scroll(href="#aboutme") ABOUT ME
+							li: a.page-scroll(href="#skills") SKILLS
+							li: a.page-scroll(href="#portafolio") PORTFOLIO
+							li: a.page-scroll(href="#contact") CONTACT
+		section#hero.text-center
+			.container
+				.box-hero
+					img.img-hero.animated.pulse.infinite(src="img/resources/name.png")
+					h2 Front-end Developer
+					a(href="#aboutme").page-scroll: i.fa.fa-chevron-circle-down
+		section#aboutme.text-center
+			.container.new-hr
+				.row
+					.col-md-4.col-md-offset-1.animated.fadeInLeft
+						img.img-about(src="img/resources/me.png")
+					.col-md-5.col-md-offset-1.animated.fadeInRight
+						img.img-me(src="img/yo.jpg")
+						p Hola soy Jhoselyn,<br>Desarrolladora web <br> impedit optio nisi deleniti, nostrum ad labore
+		section#skills.text-center
+			.container
+				img.title(src="img/resources/skills.png")
+				hr
+				.row
+					.col-md-6
+						i.fa.fa-code
+					.col-md-6
+						i.fa.fa-video-camera
+		section#corto
+		section#portafolio.text-center
+			.container
+				img.title(src="img/resources/portfolio.png")
+				hr
+				.controls
+					button(class="filter" data-filter="all") Diseño web
+					button(class="filter" data-filter=".category-1") Responsive
+					button(class="filter" data-filter=".category-2") Jade
+					button(class="filter" data-filter=".category-3") Sass
+				#Container(class="container-portfolio")
+					.mix.category-1
+						a.imagen-prueba(href=""): img.future(src="img/portfolio/future.png")
+						.hover
+					.mix.category-2
+						img.future(src="img/portfolio/future.png")
+					.mix.category-1
+						img.future(src="img/portfolio/future.png")
+					.mix.category-1
+						img.future(src="img/portfolio/future.png")
+					.mix.category-3
+						img.future(src="img/portfolio/future.png")
+					.mix.category-2
+						img.future(src="img/portfolio/future.png")
+					.mix.category-3
+						img.future(src="img/portfolio/future.png")
+					.mix.category-2
+						img.future(src="img/portfolio/future.png")
+					.mix.category-3
+						img.future(src="img/portfolio/future.png")
+		section#contact.text-center
+			.container
+				img.title(src="img/resources/contact.png")
+				hr
+				ul
+					li: a(href=""): i.fa.fa-envelope
+					li: a(href="https://github.com/jhoselyn24"): i.fa.fa-github
+					li: a(href="https://www.linkedin.com/in/jhoselyn-alison-inga-baa891120?trk=nav_responsive_tab_profile"): i.fa.fa-linkedin
+		footer
+			.container
+				.row
+					.col-md-4.col-md-offset-4
+						span.copy Copyright &copy; Jhoselyn Inga 2016
+		script(src="https://code.jquery.com/jquery-2.2.2.js")
+		script(src="js/jquery.easing.1.3.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/jquery.mixitup.js") 
+		script(src="js/cbpAnimatedHeader.js")
+		script(src="js/classie.js")
+		script(src="js/main.js")
+		script(src="js/agency.js") 
