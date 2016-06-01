@@ -1,3 +1,9 @@
+#corto{
+	background-image: url('../img/papeleria/love.jpg');
+	height: 200px;
+	background-size:cover;
+	background-attachment:fixed;
+}
 #portafolio{
 	padding: 100px 0;
 	// background-color: pink;
@@ -43,5 +49,36 @@
 	}
 	.controls{
   		padding: 2%;
+	}
+}
+.future{
+		width: 200px;
+	}
+.imagen-prueba{
+	height: 300px;
+	.hover {
+		display: none;
+	}
+	&:hover{
+		.future {
+			background-color: rgba(0,0,0,0.5);
+			opacity: 0.5;
+		}
+		.hover {
+			display: block;
+			background-color:black;
+			opacity: 0.5;
+			z-index:1;
+			float: left;
+			position: relative;
+			top:0;
+			left:0;
+		}
+	}
+}
+.hover{
+	display: none;
+	&:hover{
+		
 	}
 }
